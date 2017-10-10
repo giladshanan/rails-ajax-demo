@@ -2,8 +2,7 @@
 
 <a href="#" onclick="this.style.backgroundColor='red'">Paint it red</a>
 
-
-<%= form_with(model: @kitten) do |f| %>
+<%= form_with(model: @kitten, scope: :kitten) do |f| %>
   <p>Name: <%= f.text_field :name %></p>
   <p>Color: <%= f.text_field :color %></p>
   <p>Quirk: <%= f.text_field :quirk %></p>

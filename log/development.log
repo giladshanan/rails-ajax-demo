@@ -866,3 +866,317 @@ Processing by KittensController#create as JS
 Completed 200 OK in 66ms (Views: 18.7ms | ActiveRecord: 39.4ms)
 
 
+  [1m[36mKitten Load (1.2ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 1]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 12]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 15]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 18]]
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "kittens" WHERE "kittens"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:32:16 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:32:43 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E+KpVL9cokjuBYOMYgl/rHS8ZwmxuFgh8iRCbccXecik7l1WBi/MAG0FqaLUdzHRDLUT2W2wWVbYt6Ep+DPKQg==", "name"=>"Rutabaga", "color"=>"black", "quirk"=>"riding on shoulders", "commit"=>"Save "}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "kittens" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (47.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.7ms)
+  Rendered kittens/_kitten.html.erb (0.1ms)
+  Rendered kittens/create.js.erb (6.2ms)
+Completed 200 OK in 69ms (Views: 13.8ms | ActiveRecord: 47.6ms)
+
+
+Started GET "/kittens/26" for 127.0.0.1 at 2017-10-09 23:32:46 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"26"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kittens/26" for 127.0.0.1 at 2017-10-09 23:34:01 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"26"}
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:34:51 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.5ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 58ms (Views: 47.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/kittens/26" for 127.0.0.1 at 2017-10-09 23:34:53 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"26"}
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:35:02 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.5ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 37ms (Views: 27.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/kittens/26" for 127.0.0.1 at 2017-10-09 23:35:03 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"26"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kittens/26" for 127.0.0.1 at 2017-10-09 23:35:28 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"26"}
+  [1m[36mKitten Load (0.2ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:36:19 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ss7sK7qcOCTt6K4DIE321w5tIzmD5NfZu11uhllvXpH9whgpA+9WbG7ohC2WM7iqdmRX6V/s1q6Rzo3CZkvtGw==", "name"=>"test", "color"=>"red", "quirk"=>"sdfsdfds", "commit"=>"Save "}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "kittens" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (120.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (1.3ms)
+  Rendered kittens/_kitten.html.erb (0.3ms)
+  Rendered kittens/create.js.erb (29.2ms)
+Completed 200 OK in 186ms (Views: 37.6ms | ActiveRecord: 128.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:37:21 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  Rendered kittens/index.html.erb within layouts/application (75.9ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    3: <a href="#" onclick="this.style.backgroundColor='red'">Paint it red</a>
+    4: 
+    5: 
+    6: <%= form_with(@kitten) do |f| %>
+    7:   <p>Name: <%= f.text_field :name %></p>
+    8:   <p>Color: <%= f.text_field :color %></p>
+    9:   <p>Quirk: <%= f.text_field :quirk %></p>
+  
+app/views/kittens/index.html.erb:6:in `_app_views_kittens_index_html_erb___116636752890376756_70195218179620'
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:37:38 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  Rendered kittens/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    3: <a href="#" onclick="this.style.backgroundColor='red'">Paint it red</a>
+    4: 
+    5: 
+    6: <%= form_with @kitten do |f| %>
+    7:   <p>Name: <%= f.text_field :name %></p>
+    8:   <p>Color: <%= f.text_field :color %></p>
+    9:   <p>Quirk: <%= f.text_field :quirk %></p>
+  
+app/views/kittens/index.html.erb:6:in `_app_views_kittens_index_html_erb___116636752890376756_70195264260840'
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:37:47 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.5ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:38:54 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:38:59 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nI6bjMj/5SzDekbBYeDgO3YjidlG775ohxoJA3Lp1gUrgm+OcYyLZEB6bO/Xnq5GDir9CZrnvx+tiepHTc1ljw==", "kitten"=>{"name"=>"test", "color"=>"werw", "quirk"=>"werewr"}, "commit"=>"Save Kitten"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/kittens_controller.rb:11:in `create'
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:41:53 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 40ms (Views: 33.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:42:00 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GusHxJrDOJfOMcrj9KlbZg0AYHhySQ9FE80sHadchjqt5/PGI7BW300x4M1C1xUbdQkUqK5BDjI5Xs9ZmHg1sA==", "kitten"=>{"name"=>"ao=", "color"=>"sds", "quirk"=>"sdgsd"}, "commit"=>"Save Kitten"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/kittens_controller.rb:11:in `create'
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:43:02 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 36ms (Views: 28.6ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:43:08 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xnQKCszSJnTqXfZ8fxnnIvnVy8HSR/LABxI/WzLhUg5xeP4IdaFIPGld3FLJZ6lfgdy/EQ5P87ctgdwfDcXhhA==", "kitten"=>{"name"=>"ewr", "color"=>"wewr", "quirk"=>"werewrwe"}, "commit"=>"Save Kitten"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/kittens_controller.rb:11:in `create'
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:44:41 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 37ms (Views: 27.6ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:44:42 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hzKzowYnqlWDwO2geYKPGf+JRLyickmOTawNFsdHLOQwPkehv1TEHQDAx47P/MFkh4AwbH56SPlnP+5S+GOfbg==", "kitten"=>{"name"=>"", "color"=>"", "quirk"=>""}, "commit"=>"Save Kitten"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", ""], ["color", ""], ["quirk", ""]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.7ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/create.js.erb (6.6ms)
+Completed 200 OK in 25ms (Views: 15.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:44:48 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hzKzowYnqlWDwO2geYKPGf+JRLyickmOTawNFsdHLOQwPkehv1TEHQDAx47P/MFkh4AwbH56SPlnP+5S+GOfbg==", "kitten"=>{"name"=>"wer", "color"=>"werw", "quirk"=>"werwerw"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "wer"], ["color", "werw"], ["quirk", "werwerw"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.8ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/create.js.erb (6.6ms)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/kittens/29" for 127.0.0.1 at 2017-10-09 23:44:50 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"29"}
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:46:19 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 35ms (Views: 27.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/kittens/29" for 127.0.0.1 at 2017-10-09 23:46:20 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"29"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+

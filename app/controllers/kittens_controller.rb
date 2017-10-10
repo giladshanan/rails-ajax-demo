@@ -7,7 +7,7 @@ class KittensController < ApplicationController
   end
 
   def create
-    @kitten = Kitten.new(params[:kitten])
+    @kitten = Kitten.new(kitten_params)
     respond_to do |format|
       if @kitten.save
         format.html { redirect_to @kitten, notice: 'Kitten was successfully created.' }
@@ -21,6 +21,13 @@ class KittensController < ApplicationController
   end
 
   def show
-    render js: "alert('The kitten id number is: #{params[:id]}')"
+    @kitten = Kitten.find(params[:id])
+    render js: "alert('Meet #{@kitten.name}, a #{@kitten.color} kitten who #{@kitten.quirk}.')"
+  end
+
+  private
+
+  def kitten_params
+     params.require(:kitten).permit(:name, :color, :quirk)
   end
 end
