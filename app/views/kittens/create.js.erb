@@ -1,0 +1,5 @@
+$("<%= escape_javascript(render @kitten) %>").appendTo("#kittens");
+
+$("form").on("ajax:success", function(e) {
+    $("#kitten").append("<%= escape_javascript(render @kitten) %>")
+})
