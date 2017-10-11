@@ -1,4 +1,4 @@
-<h1>Hello World!</h1>
+<h1>Hello Kittens!</h1>
 
 <a href="#" onclick="this.style.backgroundColor='red'">Paint it red</a>
 
@@ -11,6 +11,6 @@
 
 <ul id="kittens">
   <% @kittens.each do |kitten| %>
-  <li><%= link_to kitten.name, kitten_path(kitten), remote: true %></li>
+  <%= render kitten %>
   <% end %>
 </ul>

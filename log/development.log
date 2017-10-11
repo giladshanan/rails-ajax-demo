@@ -1180,3 +1180,353 @@ Processing by KittensController#show as JS
 Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5046.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "UJS-demo_development"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (217.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "UJS-demo_development"[0m
+  [1m[35m (133.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "UJS-demo_test"[0m
+  [1m[35m (45.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7996259633286766065)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateKittens (20171010032810)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "kittens" ("id" bigserial primary key, "name" character varying, "color" character varying, "quirk" character varying)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171010032810"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-10 04:48:26.563350"], ["updated_at", "2017-10-10 04:48:26.563350"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7996259633286766065)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:48:37 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.9ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (69.6ms)
+Completed 200 OK in 513ms (Views: 505.6ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:48:57 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AMTgKadTxlLTty6SMsqtIx8PZiPD+DOVSgXGvk8U6t23yBQrHiCoGlC3BLyEtONeZwYS8x/wMuJgliX6cDBZVw==", "kitten"=>{"name"=>"Rutabaga", "color"=>"black", "quirk"=>"likes to be carried around like a baby"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Rutabaga"], ["color", "black"], ["quirk", "likes to be carried around like a baby"]]
+  [1m[35m (16.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (1.2ms)
+  Rendered kittens/_kitten.html.erb (0.1ms)
+  Rendered kittens/create.js.erb (7.6ms)
+Completed 200 OK in 53ms (Views: 15.6ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/kittens/1" for 127.0.0.1 at 2017-10-09 23:49:00 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:51:33 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:51:53 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7QX5b2+3y4ggUTsury720mvp2WiGbgB16bnNWTKPiclaCQ1t1sSlwKNREQAZULivE+CtuFpmAQLDKi4dDas6Qw==", "kitten"=>{"name"=>"Sugar Beet", "color"=>"grey tabby", "quirk"=>"eat paper"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sugar Beet"], ["color", "grey tabby"], ["quirk", "eat paper"]]
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.5ms)
+  Rendered kittens/_kitten.html.erb (0.1ms)
+  Rendered kittens/create.js.erb (5.7ms)
+Completed 200 OK in 60ms (Views: 13.5ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:51:59 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.2ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/kittens/2" for 127.0.0.1 at 2017-10-09 23:52:00 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:52:22 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Va6YXjn5Y4t4hOzoQr/8QGil1hxmn7nSkmeVtVQZTo7iomxcgIoNw/uExsb0wbI9EKyizLqXuKW49Hbxaz39BA==", "kitten"=>{"name"=>"wer", "color"=>"werwer", "quirk"=>"werewrw"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "wer"], ["color", "werwer"], ["quirk", "werewrw"]]
+  [1m[35m (48.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.7ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/create.js.erb (6.2ms)
+Completed 200 OK in 71ms (Views: 15.3ms | ActiveRecord: 48.7ms)
+
+
+Started GET "/kittens/3" for 127.0.0.1 at 2017-10-09 23:52:59 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kittens/3/delete" for 127.0.0.1 at 2017-10-09 23:53:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/kittens/3/delete"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:53:31 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5049.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "UJS-demo_development"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (131.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "UJS-demo_development"[0m
+  [1m[35m (134.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "UJS-demo_test"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7996259633286766065)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateKittens (20171010032810)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "kittens" ("id" bigserial primary key, "name" character varying, "color" character varying, "quirk" character varying)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171010032810"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-10 04:56:16.927962"], ["updated_at", "2017-10-10 04:56:16.927962"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7996259633286766065)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-10-09 23:57:57 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.7ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 449ms (Views: 441.5ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-09 23:58:54 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N27aO7BBoR3zrQO3K1dV83l6L8M/VEKZf/4Rnfq5u5+AYi45CTLPVXCtKZmdKRuOAXNbE+NcQ+5VbfLZxZ0IFQ==", "kitten"=>{"name"=>"Rutabaga", "color"=>"black", "quirk"=>"acts like a parrot"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Rutabaga"], ["color", "black"], ["quirk", "acts like a parrot"]]
+  [1m[35m (16.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (1.1ms)
+  Rendered kittens/create.js.erb (4.6ms)
+Completed 200 OK in 62ms (Views: 14.9ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/kittens/1" for 127.0.0.1 at 2017-10-09 23:58:58 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-10 00:00:43 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N27aO7BBoR3zrQO3K1dV83l6L8M/VEKZf/4Rnfq5u5+AYi45CTLPVXCtKZmdKRuOAXNbE+NcQ+5VbfLZxZ0IFQ==", "kitten"=>{"name"=>"Sugar Beet", "color"=>"grey tabby", "quirk"=>"likes to sleep in piles of laundry"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sugar Beet"], ["color", "grey tabby"], ["quirk", "likes to sleep in piles of laundry"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.6ms)
+  Rendered kittens/create.js.erb (3.8ms)
+Completed 200 OK in 25ms (Views: 10.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/kittens/2" for 127.0.0.1 at 2017-10-10 00:00:45 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 00:11:22 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 14:37:30 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.7ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/index.html.erb within layouts/application (118.9ms)
+Completed 200 OK in 540ms (Views: 518.4ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-10 14:39:17 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QfD9DxHhzIkdfR8EnZviEv2k+jiQ8oavdm2JnDCnex/2/AkNqJKiwZ59NSor5axvha2O6Ez6h9hc/mrYD4PIlQ==", "kitten"=>{"name"=>"Pillows", "color"=>"Orange", "quirk"=>"likes spinach"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Pillows"], ["color", "Orange"], ["quirk", "likes spinach"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (1.5ms)
+  Rendered kittens/create.js.erb (20.0ms)
+Completed 200 OK in 64ms (Views: 29.6ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/kittens/3" for 127.0.0.1 at 2017-10-10 14:39:27 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mKitten Load (0.5ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/kittens/2" for 127.0.0.1 at 2017-10-10 14:39:41 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kittens/1" for 127.0.0.1 at 2017-10-10 14:39:51 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-10 14:40:37 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QfD9DxHhzIkdfR8EnZviEv2k+jiQ8oavdm2JnDCnex/2/AkNqJKiwZ59NSor5axvha2O6Ez6h9hc/mrYD4PIlQ==", "kitten"=>{"name"=>"Scarf", "color"=>"orange and white", "quirk"=>"traps himself in the bathroom"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Scarf"], ["color", "orange and white"], ["quirk", "traps himself in the bathroom"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.6ms)
+  Rendered kittens/create.js.erb (2.9ms)
+Completed 200 OK in 18ms (Views: 8.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/kittens/4" for 127.0.0.1 at 2017-10-10 14:40:44 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 14:46:35 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.6ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/_kitten.html.erb (1.5ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kittens/4" for 127.0.0.1 at 2017-10-10 14:51:02 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 14:53:16 -0500
+Processing by KittensController#index as HTML
+  Rendering kittens/index.html.erb within layouts/application
+  [1m[36mKitten Load (0.4ms)[0m  [1m[34mSELECT "kittens".* FROM "kittens"[0m
+  Rendered kittens/_kitten.html.erb (1.8ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/_kitten.html.erb (0.2ms)
+  Rendered kittens/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/kittens" for 127.0.0.1 at 2017-10-10 14:54:05 -0500
+Processing by KittensController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gk4AF04wWbSW7RgTDCu2qvTp5RWHu+bGBxrbvdiSphCtQvQV90M3/BXtMj26VfjXjOCRxVuz57EtiTj557YVmg==", "kitten"=>{"name"=>"Kennedy", "color"=>"brownish orangeish, like a little rainbow", "quirk"=>"is a shithead"}, "commit"=>"Save Kitten"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "kittens" ("name", "color", "quirk") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kennedy"], ["color", "brownish orangeish, like a little rainbow"], ["quirk", "is a shithead"]]
+  [1m[35m (36.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering kittens/create.js.erb
+  Rendered kittens/_kitten.html.erb (0.8ms)
+  Rendered kittens/create.js.erb (4.2ms)
+Completed 200 OK in 57ms (Views: 12.3ms | ActiveRecord: 37.3ms)
+
+
+Started GET "/kittens/5" for 127.0.0.1 at 2017-10-10 14:54:09 -0500
+Processing by KittensController#show as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mKitten Load (0.3ms)[0m  [1m[34mSELECT  "kittens".* FROM "kittens" WHERE "kittens"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
